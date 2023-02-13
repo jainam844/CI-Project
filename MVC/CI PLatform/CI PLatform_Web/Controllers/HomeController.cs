@@ -26,7 +26,18 @@ namespace CI_PLatform_Web.Controllers
         {
             return View();
         }
-
+        public IActionResult forgot()
+        {
+            return View();
+        }
+        public IActionResult newpassword()
+        {
+            return View();
+        }
+        public IActionResult register()
+        {
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
