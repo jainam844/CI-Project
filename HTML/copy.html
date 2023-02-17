@@ -15,8 +15,27 @@
 
 
 
-    <title>Home</title>
+    <title>Het</title>
     <style>
+        .wrapper {
+            display: flex;
+            /* align-items: center; */
+            column-gap: 10px;
+        }
+
+        .divider {
+            flex-grow: 1;
+            border-color: rgb(57, 57, 196);
+        }
+
+        .left,
+        .right {
+            border: 2px solid red;
+            height: 50px;
+            width: 50px;
+            background: yellow;
+        }
+
         * {
             box-sizing: border-box;
         }
@@ -49,16 +68,18 @@
         .b1 {
             background-color: white;
         }
-.b2{
-    border: 2px solid rgb(104, 101, 101);
-    border-radius: 20px;
- font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-} 
 
-span {
-    display: inline-block;    
-}
-      .anchor a:link {
+        .b2 {
+            border: 2px solid rgb(219, 210, 210);
+            border-radius: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        span {
+            display: inline-block;
+        }
+
+        .anchor a:link {
             color: green;
             background-color: transparent;
             text-decoration: none;
@@ -82,7 +103,7 @@ span {
             text-decoration: underline;
         }
 
-       
+
         .navbar-search-sm {
             display: inline-block;
             margin-top: 8px;
@@ -97,37 +118,73 @@ span {
             display: inline-block;
             margin-left: 15px;
         }
-        .apply{
+
+        .apply {
             width: 150px;
             border-radius: 20px;
             color: #F88634;
             border: 2px solid #F88634;
         }
-        .apply2 :hover{
-           background-color: #ffaf75;;
-        }
-        @media (max-width: 400px) 
- {
-  .font {
-font-size:12px;
-  } 
-}
 
-.wrapper{
-       display: flex;
-       /* align-items: center; */
-       column-gap: 10px;
-    }
-    .divider{
-       flex-grow: 1;
-       border-color: rgb(57, 57, 196);
-    }
-    .left, .right{
-       border: 2px solid red;
-       height: 50px;
-       width: 50px;
-       background: yellow;
-    }
+        .apply2 :hover {
+            background-color: #ffaf75;
+            ;
+        }
+
+        @media (max-width: 400px) {
+            .font {
+                font-size: 12px;
+            }
+        }
+
+
+        .divider {
+            flex-grow: 1;
+            border-color: rgb(214, 214, 221);
+        }
+
+        .justy {
+            justify-content: space-between;
+        }
+
+        
+        .apply4 {
+            border-radius: 18px;
+            background-color: white;
+            border: 2px solid white;
+            width: 110px;
+        }
+
+        .apply3 {
+            background-color: white;
+            border-radius: 18px;
+            width: 110px;
+        }
+
+        .upper {
+            margin-top: -185px;
+        }
+
+        .upper2 {
+            margin-top: 45px;
+        }
+
+        .upper3 {
+            background-color: rgb(0, 0, 0);
+            border-radius: 50%;
+            opacity: 0.6;
+        }
+
+        .upper4 {
+            background-color: rgb(0, 0, 0);
+            border-radius: 18px;
+            opacity: 0.6;
+        }
+
+        .upper5 {
+            color: white;
+          
+        }
     </style>
 </head>
 
@@ -191,7 +248,7 @@ font-size:12px;
     </div>
 
     <hr>
-    <div class="container-fluid ">
+    <div class="container-fluid">
         <div class="container">
             <div class="row d-flex">
                 <nav class="navbar bg-body-tertiary p-0">
@@ -207,7 +264,7 @@ font-size:12px;
                             <div class="col-3 col-sm-3 col-lg-3  dropdown h-dropdown ">
                                 <a class="nav-link dropdown-toggle  " href="#" id="navbarDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span class="font" >Country</span>
+                                    <span class="font">Country</span>
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">Action1</a></li>
@@ -221,7 +278,7 @@ font-size:12px;
                             <div class="col-3 col-sm-3 col-lg-3   dropdown h-dropdown ">
                                 <a class="nav-link dropdown-toggle  " href="#" id="navbarDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span class="font"   >City</span>
+                                    <span class="font">City</span>
                                 </a>
                                 <ul class="dropdown-menu w-100">
                                     <li><a class="dropdown-item" href="#">My Profile</a></li>
@@ -232,7 +289,7 @@ font-size:12px;
                             <div class="col-3 col-sm-3 col-lg-3   dropdown h-dropdown ">
                                 <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span class="font"   >Theme</span>
+                                    <span class="font">Theme</span>
                                 </a>
                                 <ul class="dropdown-menu w-100">
                                     <li><a class="dropdown-item" href="#">My Profile</a></li>
@@ -240,12 +297,12 @@ font-size:12px;
                                     <li><a class="dropdown-item" href="login.html">Logout</a></li>
                                 </ul>
                             </div>
-                            <div class="col-3 col-sm-3 col-lg-3   dropdown h-dropdown ">
+                            <div class="col-3 col-sm-3 col-lg-3   dropdown h-dropdown">
                                 <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span class="font"  >Skills</span>
+                                    <span class="font">Skills</span>
                                 </a>
-                                <ul class="dropdown-menu w-100">
+                                <ul class="dropdown-menu w-100  dropdown-menu-end ">
                                     <li><a class="dropdown-item" href="#">My Profile</a></li>
                                     <li><a class="dropdown-item" href="#">Help</a></li>
                                     <li><a class="dropdown-item" href="login.html">Logout</a></li>
@@ -261,52 +318,201 @@ font-size:12px;
     <hr>
 
     <div class="container">
-        <div class="row ">
-            <div class="col-lg-4 ">
+        <div class="row">
+            <div class="col-md-9 col-sm-12">Explore <b>72 missions</b></div>
+            <div class="col-md-3 col-sm-12 d-flex justy">
+                <div class="dropdown h-dropdown">
+                    <button style="background-color: white; border: none;">
+                        <a class="nav-link dropdown-toggle  " href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span style="font-size: 14px;">short by</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action1</a></li>
+                            <li><a class="dropdown-item" href="#">Action1</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Action1</a></li>
+                        </ul>
+                    </button>
+                </div>
+                <div class="">
+                    <i class="bi bi-grid"></i>
+                </div>
+                <div class="">
+                    <i class="bi bi-list"></i>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
                 <div class="card">
                     <img src="images/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png" class="card-img-top"
                         alt="...">
+                    <!-- <div class="upper">
+                        <div class="d-flex justify-content-end">
+                            <div class="upper4">
+                                <button type="button" class="btn upper5" style="font-size: 12px;">
+                                    <i class="bi bi-geo-alt"></i>Melbourne
+                                </button>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end upper2">
+                            <div class="upper3">
+                                <button type="button" class="btn btn-outline upper5">
+                                    <i class="bi bi-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <div class="upper3" style="margin-top: 3px;">
+                                <button type="button" class="btn btn-outline upper5" >
+                                    <i class="bi bi-square-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-3">
+                            <div class="d-flex justify-content-center apply3">Children</div>
+                        </div>
+                    </div> -->
+                    <div class="card-img-overlay">
+                        <p class="text-end text">
+                            <button class="btn btn-box">
+                                <img src="./images/pin.png" class="mx-2 cancle-img" alt="">
+                                <span style="color: white;">Torento</span>
+                            </button>
+    
+    
+    
+                        </p>
+
+
+                        <p class="text-end text ">
+                            <button class="btn btn-box">
+                                <img src="./images/heart.png" class="mx-2 cancle-img" alt="">
+                                <span style="color: white;"></span>
+                            </button>
+    
+    
+    
+                        </p>
+                        <p class="text-end text ">
+                            <button class="btn btn-box">
+                                <i class="bi bi-square-fill " style="color:white"></i>
+                                <span style="color: white;"></span>
+                            </button>
+    
+    
+    
+                        </p>
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">Education Supplies for Every Pair of Shoes Sold</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                             tempor incididunt ut labore...
                         </p>
                         <div class="container p-2">
-                            <div class="row">
-                                <div class="col-lg-6">
+                            <div class="row d-flex">
+                                <div class="col-md-6">
                                     Australian Paradise
                                 </div>
-                                <div class="col-lg-6 d-flex flex-row-reverse">
+                                <div class="col-md-6">
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapper  d-flex justify-content-center">
+                            <hr class="divider">
+                            <div class=" d-flex justify-content-center b2 ">
+
+                                <div class="d-flex justify-content-center .left .right "> From 10/01/2019 until
+                                    25/02/2019
+
+                                </div>
+
+                            </div>
+                            <hr class="divider">
+                        </div>
+                        <div class="container">
+                            <div class="row mt-2">
+                                <div class="col-6 ">
+
+                                    <i class="bi bi-person-check " style="font-size: 28px;"></i>
+                                    10 <br>
+                                    seats left
+
+                                </div>
+                                <div class="col-6 ">
+                                    <i class="bi bi-clock" style="font-size: 25px;"></i>
+                                    09/01/2019 <br> Deadline
                                 </div>
                             </div>
                         </div>
 
+                        <hr>
+                        <div class="d-flex justify-content-center apply2">
+                            <button type="button" class="btn btn-outline apply">Apply <i
+                                    class=" ms-2 bi bi-arrow-right-short"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Education Supplies for Every Pair of Shoes Sold</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore...
+                        </p>
+                        <div class="container p-2">
+                            <div class="row d-flex">
+                                <div class="col-md-6">
+                                    Australian Paradise
+                                </div>
+                                <div class="col-md-6">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center ms-md-5">
+                            <button class="btn btn-box btn-box">
 
-                        <div class="wrapper  d-flex justify-content-center">  
-                            <hr class="divider">
-                        <div class=" d-flex justify-content-center b2 ">
-                     
-                            <div class="d-flex justify-content-center .left .right ">  From 10/01/2019 until 25/02/2019
-                             
+                                <span style="color: black;">From 10/01/2019 until 25/02/2019</span>
+                            </button>
+                        </div>
+                        <div class="container">
+                            <div class="row mt-2">
+                                <div class="col-6 ">
+                                    <i class="bi bi-person-check " style="font-size: 28px;"></i>
+                                    10 <br>
+                                    seats left
+
+                                </div>
+                                <div class="col-6 ">
+                                    <i class="bi bi-clock" style="font-size: 25px;"></i>
+                                    09/01/2019 <br> Deadline
+                                </div>
                             </div>
-                         
-                            </div>
-                            <hr class="divider">
-                          </div>
-                     
-                          <br>
+                        </div>
+                        <hr>
                         <div class="d-flex justify-content-center apply2">
-                            <button type="button" class="btn btn-outline apply">Apply <i class=" ms-2 bi bi-arrow-right-short"></i></button>
+                            <button type="button" class="btn btn-outline apply">Apply <i
+                                    class=" ms-2 bi bi-arrow-right-short"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 ">
+            <div class="col">
                 <div class="card">
                     <img src="images/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png" class="card-img-top"
                         alt="...">
@@ -316,11 +522,11 @@ font-size:12px;
                             tempor incididunt ut labore...
                         </p>
                         <div class="container p-2">
-                            <div class="row">
-                                <div class="col-lg-6">
+                            <div class="row d-flex">
+                                <div class="col-md-6">
                                     Australian Paradise
                                 </div>
-                                <div class="col-lg-6 d-flex flex-row-reverse">
+                                <div class="col-md-6">
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
@@ -329,26 +535,34 @@ font-size:12px;
                                 </div>
                             </div>
                         </div>
-                        <div class="wrapper  d-flex justify-content-center">  
-                            <hr class="divider">
-                        <div class=" d-flex justify-content-center b2 ">
-                     
-                            <div class="d-flex justify-content-center .left .right ">  From 10/01/2019 until 25/02/2019
-                             
+                        <div class="container d-flex justify-content-center">
+                            <div class="eventdate d-flex justify-content-center mb-2">
+                                From 10/01/2019 until 25/02/2019
                             </div>
-                         
+                        </div>
+                        <div class="container">
+                            <div class="row mt-2">
+                                <div class="col-6 ">
+                                    <i class="bi bi-person-check " style="font-size: 28px;"></i>
+                                    10 <br>
+                                    seats left
+
+                                </div>
+                                <div class="col-6 ">
+                                    <i class="bi bi-clock" style="font-size: 25px;"></i>
+                                    09/01/2019 <br> Deadline
+                                </div>
                             </div>
-                            <hr class="divider">
-                          </div>
-                     
-                          <br>
+                        </div>
+                        <hr>
                         <div class="d-flex justify-content-center apply2">
-                            <button type="button" class="btn btn-outline apply">Apply <i class=" ms-2 bi bi-arrow-right-short"></i></button>
+                            <button type="button" class="btn btn-outline apply">Apply <i
+                                    class=" ms-2 bi bi-arrow-right-short"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 ">
+            <div class="col">
                 <div class="card">
                     <img src="images/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png" class="card-img-top"
                         alt="...">
@@ -358,11 +572,11 @@ font-size:12px;
                             tempor incididunt ut labore...
                         </p>
                         <div class="container p-2">
-                            <div class="row">
-                                <div class="col-lg-6">
+                            <div class="row d-flex">
+                                <div class="col-md-6">
                                     Australian Paradise
                                 </div>
-                                <div class="col-lg-6 d-flex flex-row-reverse">
+                                <div class="col-md-6">
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
@@ -371,28 +585,34 @@ font-size:12px;
                                 </div>
                             </div>
                         </div>
-                        <div class="wrapper  d-flex justify-content-center">  
-                            <hr class="divider">
-                        <div class=" d-flex justify-content-center b2 ">
-                     
-                            <div class="d-flex justify-content-center .left .right ">  From 10/01/2019 until 25/02/2019
-                             
+                        <div class="container d-flex justify-content-center">
+                            <div class="eventdate d-flex justify-content-center mb-2">
+                                From 10/01/2019 until 25/02/2019
                             </div>
-                         
+                        </div>
+                        <div class="container">
+                            <div class="row mt-2">
+                                <div class="col-6 ">
+                                    <i class="bi bi-person-check " style="font-size: 28px;"></i>
+                                    10 <br>
+                                    seats left
+
+                                </div>
+                                <div class="col-6 ">
+                                    <i class="bi bi-clock" style="font-size: 25px;"></i>
+                                    09/01/2019 <br> Deadline
+                                </div>
                             </div>
-                            <hr class="divider">
-                          </div>
-                     
-                          <br>
+                        </div>
+                        <hr>
                         <div class="d-flex justify-content-center apply2">
-                            <button type="button" class="btn btn-outline apply">Apply <i class=" ms-2 bi bi-arrow-right-short"></i></button>
+                            <button type="button" class="btn btn-outline apply">Apply <i
+                                    class=" ms-2 bi bi-arrow-right-short"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-lg-4 ">
+            <div class="col">
                 <div class="card">
                     <img src="images/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png" class="card-img-top"
                         alt="...">
@@ -402,11 +622,11 @@ font-size:12px;
                             tempor incididunt ut labore...
                         </p>
                         <div class="container p-2">
-                            <div class="row">
-                                <div class="col-lg-6">
+                            <div class="row d-flex">
+                                <div class="col-md-6">
                                     Australian Paradise
                                 </div>
-                                <div class="col-lg-6 d-flex flex-row-reverse">
+                                <div class="col-md-6">
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
@@ -415,233 +635,29 @@ font-size:12px;
                                 </div>
                             </div>
                         </div>
-                        <div class="wrapper  d-flex justify-content-center">  
-                            <hr class="divider">
-                        <div class=" d-flex justify-content-center b2 ">
-                     
-                            <div class="d-flex justify-content-center .left .right ">  From 10/01/2019 until 25/02/2019
-                             
+                        <div class="container d-flex justify-content-center">
+                            <div class="eventdate d-flex justify-content-center mb-2">
+                                From 10/01/2019 until 25/02/2019
                             </div>
-                         
+                        </div>
+                        <div class="container">
+                            <div class="row mt-2">
+                                <div class="col-6 ">
+                                    <i class="bi bi-person-check " style="font-size: 28px;"></i>
+                                    10 <br>
+                                    seats left
+
+                                </div>
+                                <div class="col-6 ">
+                                    <i class="bi bi-clock" style="font-size: 25px;"></i>
+                                    09/01/2019 <br> Deadline
+                                </div>
                             </div>
-                            <hr class="divider">
-                          </div>
-                     
-                          <br>
+                        </div>
+                        <hr>
                         <div class="d-flex justify-content-center apply2">
-                            <button type="button" class="btn btn-outline apply">Apply <i class=" ms-2 bi bi-arrow-right-short"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 ">
-                <div class="card">
-                    <img src="images/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png" class="card-img-top"
-                        alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Education Supplies for Every Pair of Shoes Sold</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore...
-                        </p>
-                        <div class="container p-2">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    Australian Paradise
-                                </div>
-                                <div class="col-lg-6 d-flex flex-row-reverse">
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wrapper  d-flex justify-content-center">  
-                            <hr class="divider">
-                        <div class=" d-flex justify-content-center b2 ">
-                     
-                            <div class="d-flex justify-content-center .left .right ">  From 10/01/2019 until 25/02/2019
-                             
-                            </div>
-                         
-                            </div>
-                            <hr class="divider">
-                          </div>
-                     
-                          <br>
-                        <div class="d-flex justify-content-center apply2">
-                            <button type="button" class="btn btn-outline apply">Apply <i class=" ms-2 bi bi-arrow-right-short"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 ">
-                <div class="card">
-                    <img src="images/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png" class="card-img-top"
-                        alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Education Supplies for Every Pair of Shoes Sold</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore...
-                        </p>
-                        <div class="container p-2">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    Australian Paradise
-                                </div>
-                                <div class="col-lg-6 d-flex flex-row-reverse">
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wrapper  d-flex justify-content-center">  
-                            <hr class="divider">
-                        <div class=" d-flex justify-content-center b2 ">
-                     
-                            <div class="d-flex justify-content-center .left .right ">  From 10/01/2019 until 25/02/2019
-                             
-                            </div>
-                         
-                            </div>
-                            <hr class="divider">
-                          </div>
-                     
-                          <br>
-                        <div class="d-flex justify-content-center apply2">
-                            <button type="button" class="btn btn-outline apply">Apply <i class=" ms-2 bi bi-arrow-right-short"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-lg-4 ">
-                <div class="card">
-                    <img src="images/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png" class="card-img-top"
-                        alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Education Supplies for Every Pair of Shoes Sold</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore...
-                        </p>
-                        <div class="container p-2">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    Australian Paradise
-                                </div>
-                                <div class="col-lg-6 d-flex flex-row-reverse">
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wrapper  d-flex justify-content-center">  
-                            <hr class="divider">
-                        <div class=" d-flex justify-content-center b2 ">
-                     
-                            <div class="d-flex justify-content-center .left .right ">  From 10/01/2019 until 25/02/2019
-                             
-                            </div>
-                         
-                            </div>
-                            <hr class="divider">
-                          </div>
-                     
-                          <br>
-                        <div class="d-flex justify-content-center apply2">
-                            <button type="button" class="btn btn-outline apply">Apply <i class=" ms-2 bi bi-arrow-right-short"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 ">
-                <div class="card">
-                    <img src="images/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png" class="card-img-top"
-                        alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Education Supplies for Every Pair of Shoes Sold</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore...
-                        </p>
-                        <div class="container p-2">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    Australian Paradise
-                                </div>
-                                <div class="col-lg-6 d-flex flex-row-reverse">
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wrapper  d-flex justify-content-center">  
-                            <hr class="divider">
-                        <div class=" d-flex justify-content-center b2 ">
-                     
-                            <div class="d-flex justify-content-center .left .right ">  From 10/01/2019 until 25/02/2019
-                             
-                            </div>
-                         
-                            </div>
-                            <hr class="divider">
-                          </div>
-                     
-                          <br>
-                        <div class="d-flex justify-content-center apply2">
-                            <button type="button" class="btn btn-outline apply">Apply <i class=" ms-2 bi bi-arrow-right-short"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 ">
-                <div class="card">
-                    <img src="images/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png" class="card-img-top"
-                        alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Education Supplies for Every Pair of Shoes Sold</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore...
-                        </p>
-                        <div class="container p-2">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    Australian Paradise
-                                </div>
-                                <div class="col-lg-6 d-flex flex-row-reverse">
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wrapper  d-flex justify-content-center">  
-                            <hr class="divider">
-                        <div class=" d-flex justify-content-center b2 ">
-                     
-                            <div class="d-flex justify-content-center .left .right ">  From 10/01/2019 until 25/02/2019
-                             
-                            </div>
-                         
-                            </div>
-                            <hr class="divider">
-                          </div>
-                     
-                          <br>
-                        <div class="d-flex justify-content-center apply2">
-                            <button type="button" class="btn btn-outline apply">Apply <i class=" ms-2 bi bi-arrow-right-short"></i></button>
+                            <button type="button" class="btn btn-outline apply">Apply <i
+                                    class=" ms-2 bi bi-arrow-right-short"></i></button>
                         </div>
                     </div>
                 </div>
