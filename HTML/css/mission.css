@@ -1,0 +1,63 @@
+.multi-item-carousel .carousel-inner .item {
+  transition: 500ms ease-in-out left;
+}
+.multi-item-carousel .carousel-inner .active.left {
+  left: -33%;
+}
+.multi-item-carousel .carousel-inner .active.right {
+  left: 33%;
+}
+.multi-item-carousel .carousel-inner .next {
+  left: 33%;
+}
+.multi-item-carousel .carousel-inner .prev {
+  left: -33%;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .multi-item-carousel .carousel-inner > .item {
+    transition: 500ms ease-in-out left;
+    transition: 500ms ease-in-out all;
+    -webkit-backface-visibility: visible;
+            backface-visibility: visible;
+    transform: none !important;
+  }
+}
+.multi-item-carousel .carouse-control.left,
+.multi-item-carousel .carouse-control.right {
+  background-image: none;
+}
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+
+
+  body{
+    background: #333;
+    color: #ddd;
+  
+  }
+  * {
+    box-sizing: border-box;
+    
+
+}
+
+.profile-nav {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.nav-item {
+    list-style-type: None;
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+ 
