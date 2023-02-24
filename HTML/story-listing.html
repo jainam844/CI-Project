@@ -13,25 +13,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title>Story ListingPage</title>
     <style>
-        .wrapper {
-            display: flex;
-            /* align-items: center; */
-            column-gap: 5px;
-        }
-
-        .divider {
-            flex-grow: 1;
-            border-color: rgb(57, 57, 196);
-        }
-
-        .left,
-        .right {
-            border: 2px solid red;
-            height: 50px;
-            width: 50px;
-            background: yellow;
-        }
-
         * {
             box-sizing: border-box;
         }
@@ -52,24 +33,8 @@
             border-radius: 50%;
         }
 
-        /* .search {
-            width: 15px;
-            height: 15px;
-        } */
 
-        .h-item {
-            height: 40px;
-        }
 
-        .b1 {
-            background-color: white;
-        }
-
-        .b2 {
-            border: 2px solid rgb(219, 210, 210);
-            border-radius: 20px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
 
         span {
             display: inline-block;
@@ -118,23 +83,43 @@
         .apply {
             width: 150px;
             border-radius: 20px;
-            color: #F88634;
-            border: 2px solid #F88634;
+            color: white;
+            border: 2px solid #fffefe;
             z-index: 1;
-           
+
         }
 
 
         .apply2 :hover {
-            background-color: #dfdbd7;
-            ;
+            background-color: #fff8f8;
+            
         }
 
         @media (max-width: 400px) {
-            .font {
+            /* .font {
                 font-size: 12px;
+            } */
+
+            .lorem {
+                font-size: 1.2em;
+                margin-top: 100px;
             }
         }
+        .lorem{
+            font-size: 1.2em; 
+        }
+
+        @media (max-width: 500px) {
+            /* .font {
+                font-size: 12px;
+            } */
+
+            .lorem {
+                font-size: 12px;
+                margin-top: 100px;
+            }
+        }
+
 
         @media only screen and (min-width: 990px) and (max-width: 1200px) {
             .sqr {
@@ -153,7 +138,7 @@
             justify-content: space-between;
         }
 
-     
+
         .bg {
             display: flex;
             justify-content: center;
@@ -163,35 +148,37 @@
             opacity: 1;
             object-fit: cover;
             object-position: 100% 33%;
-            display: block;
+            /* display: block; */
             width: 100%;
             height: 350px;
             filter: brightness(100%);
             transition: .5s ease;
-            backface-visibility: hidden;
+            /* backface-visibility: hidden; */
             display: flex;
 
-        } 
+        }
+
         .banner1 {
             opacity: 1;
             width: 100%;
-          
+
             filter: brightness(100%);
             transition: .5s ease;
             backface-visibility: hidden;
             display: flex;
 
         }
+
         .bg:hover .banner1 {
-            opacity: 0.6;
-            filter: brightness(35%);
+            opacity: 0.9;
+            filter: brightness(30%);
 
         }
 
 
         .bg:hover .banner {
-            opacity: 0.6;
-            filter: brightness(40%);
+            opacity: 0.9;
+            filter: brightness(30%);
 
         }
 
@@ -212,7 +199,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
-            text-align: center;
+           
         }
 
         .title {
@@ -353,15 +340,16 @@
                 </nav>
             </div>
         </div>
-
-        <div>
-            <br>
-
+    </div>
+       
+           
+<!-- main image -->
+<div class="card mt-3">
             <div class="bg">
                 <img src="./images/Grow-Trees-On-the-path-to-environment-sustainability-login.png" class="banner"
                     alt="">
                 <div class="banner-header  ">
-                    <p class="text-light d-flex justify-content-center ">Lorem ipsum dolor sit amet consectetur
+                    <p class="text-light d-flex justify-content-center  lorem " style="position: relative;">Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Dolorum debitis alias
                         doloribus impedit natus praesentium molestiae nulla fugiat alias doloribus impedit natus
                         praesentium
@@ -376,28 +364,29 @@
 
             </div>
         </div>
-    
+      
 
+<!-- sub images -->
         <div class="container mt-3">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
                     <div class="card ">
 
                         <div class="bg">
-                        <img src="images/Grow-Trees-On-the-path-to-environment-sustainability-1.png" class="banner1"
-                            class="card-img-top" alt="...">
+                            <img src="images/image1.png" class="banner1" class="card-img-top" alt="...">
 
 
                             <div class="banner-header d-flex justify-content-center ">
-                                
+
                                 <div class="  apply2">
-                                    <button type="button" class="btn btn-outline apply " style="margin-bottom: 200px;  ">
-                                        Post Comment
-            
+                                    <button type="button" class="btn btn-outline apply "
+                                        style="margin-bottom: 200px;  ">
+                                        View Details
+
                                     </button>
                                 </div>
                             </div>
-                            </div>
+                        </div>
 
 
 
@@ -428,11 +417,442 @@
                         </div>
 
 
+
+
+
                     </div>
                 </div>
+                <div class="col">
+                    <div class="card ">
+
+                        <div class="bg">
+                            <img src="images/image1.png" class="banner1" class="card-img-top" alt="...">
+
+
+                            <div class="banner-header d-flex justify-content-center ">
+
+                                <div class="  apply2">
+                                    <button type="button" class="btn btn-outline apply "
+                                        style="margin-bottom: 200px;  ">
+                                        View Details
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="position-relative">
+                            <div class="position-absolute top-100 start-50 translate-middle round p-2 title"
+                                style="background-color: white;">
+                                Children</div>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Education Supplies for Every Pair of Shoes Sold</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore...
+                            </p>
+
+                            <!-- <div class="container"> -->
+                            <div class="col-12">
+                                <div class="row mt-3" style="background-color: white">
+                                    <div class="col-12 d-flex justify-content-start align-items-start">
+                                        <img src="images/volunteer1.png" style="border-radius: 50%; height: 4.5em;"
+                                            alt="">
+                                        <span class="d-flex justify-content-center  mt-4 ms-3"> Margaret Walsh</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card ">
+
+                        <div class="bg">
+                            <img src="images/image1.png" class="banner1" class="card-img-top" alt="...">
+
+
+                            <div class="banner-header d-flex justify-content-center ">
+
+                                <div class="  apply2">
+                                    <button type="button" class="btn btn-outline apply "
+                                        style="margin-bottom: 200px;  ">
+                                        View Details
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="position-relative">
+                            <div class="position-absolute top-100 start-50 translate-middle round p-2 title"
+                                style="background-color: white;">
+                                Children</div>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Education Supplies for Every Pair of Shoes Sold</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore...
+                            </p>
+
+                            <!-- <div class="container"> -->
+                            <div class="col-12">
+                                <div class="row mt-3" style="background-color: white">
+                                    <div class="col-12 d-flex justify-content-start align-items-start">
+                                        <img src="images/volunteer1.png" style="border-radius: 50%; height: 4.5em;"
+                                            alt="">
+                                        <span class="d-flex justify-content-center  mt-4 ms-3"> Margaret Walsh</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card ">
+
+                        <div class="bg">
+                            <img src="images/image1.png" class="banner1" class="card-img-top" alt="...">
+
+
+                            <div class="banner-header d-flex justify-content-center ">
+
+                                <div class="  apply2">
+                                    <button type="button" class="btn btn-outline apply "
+                                        style="margin-bottom: 200px;  ">
+                                        View Details
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="position-relative">
+                            <div class="position-absolute top-100 start-50 translate-middle round p-2 title"
+                                style="background-color: white;">
+                                Children</div>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Education Supplies for Every Pair of Shoes Sold</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore...
+                            </p>
+
+                            <!-- <div class="container"> -->
+                            <div class="col-12">
+                                <div class="row mt-3" style="background-color: white">
+                                    <div class="col-12 d-flex justify-content-start align-items-start">
+                                        <img src="images/volunteer1.png" style="border-radius: 50%; height: 4.5em;"
+                                            alt="">
+                                        <span class="d-flex justify-content-center  mt-4 ms-3"> Margaret Walsh</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card ">
+
+                        <div class="bg">
+                            <img src="images/image1.png" class="banner1" class="card-img-top" alt="...">
+
+
+                            <div class="banner-header d-flex justify-content-center ">
+
+                                <div class="  apply2">
+                                    <button type="button" class="btn btn-outline apply "
+                                        style="margin-bottom: 200px;  ">
+                                        View Details
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="position-relative">
+                            <div class="position-absolute top-100 start-50 translate-middle round p-2 title"
+                                style="background-color: white;">
+                                Children</div>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Education Supplies for Every Pair of Shoes Sold</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore...
+                            </p>
+
+                            <!-- <div class="container"> -->
+                            <div class="col-12">
+                                <div class="row mt-3" style="background-color: white">
+                                    <div class="col-12 d-flex justify-content-start align-items-start">
+                                        <img src="images/volunteer1.png" style="border-radius: 50%; height: 4.5em;"
+                                            alt="">
+                                        <span class="d-flex justify-content-center  mt-4 ms-3"> Margaret Walsh</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card ">
+
+                        <div class="bg">
+                            <img src="images/image1.png" class="banner1" class="card-img-top" alt="...">
+
+
+                            <div class="banner-header d-flex justify-content-center ">
+
+                                <div class="  apply2">
+                                    <button type="button" class="btn btn-outline apply "
+                                        style="margin-bottom: 200px;  ">
+                                        View Details
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="position-relative">
+                            <div class="position-absolute top-100 start-50 translate-middle round p-2 title"
+                                style="background-color: white;">
+                                Children</div>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Education Supplies for Every Pair of Shoes Sold</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore...
+                            </p>
+
+                            <!-- <div class="container"> -->
+                            <div class="col-12">
+                                <div class="row mt-3" style="background-color: white">
+                                    <div class="col-12 d-flex justify-content-start align-items-start">
+                                        <img src="images/volunteer1.png" style="border-radius: 50%; height: 4.5em;"
+                                            alt="">
+                                        <span class="d-flex justify-content-center  mt-4 ms-3"> Margaret Walsh</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card ">
+
+                        <div class="bg">
+                            <img src="images/image1.png" class="banner1" class="card-img-top" alt="...">
+
+
+                            <div class="banner-header d-flex justify-content-center ">
+
+                                <div class="  apply2">
+                                    <button type="button" class="btn btn-outline apply "
+                                        style="margin-bottom: 200px;  ">
+                                        View Details
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="position-relative">
+                            <div class="position-absolute top-100 start-50 translate-middle round p-2 title"
+                                style="background-color: white;">
+                                Children</div>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Education Supplies for Every Pair of Shoes Sold</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore...
+                            </p>
+
+                            <!-- <div class="container"> -->
+                            <div class="col-12">
+                                <div class="row mt-3" style="background-color: white">
+                                    <div class="col-12 d-flex justify-content-start align-items-start">
+                                        <img src="images/volunteer1.png" style="border-radius: 50%; height: 4.5em;"
+                                            alt="">
+                                        <span class="d-flex justify-content-center  mt-4 ms-3"> Margaret Walsh</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card ">
+
+                        <div class="bg">
+                            <img src="images/image1.png" class="banner1" class="card-img-top" alt="...">
+
+
+                            <div class="banner-header d-flex justify-content-center ">
+
+                                <div class="  apply2">
+                                    <button type="button" class="btn btn-outline apply "
+                                        style="margin-bottom: 200px;  ">
+                                        View Details
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="position-relative">
+                            <div class="position-absolute top-100 start-50 translate-middle round p-2 title"
+                                style="background-color: white;">
+                                Children</div>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Education Supplies for Every Pair of Shoes Sold</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore...
+                            </p>
+
+                            <!-- <div class="container"> -->
+                            <div class="col-12">
+                                <div class="row mt-3" style="background-color: white">
+                                    <div class="col-12 d-flex justify-content-start align-items-start">
+                                        <img src="images/volunteer1.png" style="border-radius: 50%; height: 4.5em;"
+                                            alt="">
+                                        <span class="d-flex justify-content-center  mt-4 ms-3"> Margaret Walsh</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="card ">
+
+                        <div class="bg">
+                            <img src="images/image1.png" class="banner1" class="card-img-top" alt="...">
+
+
+                            <div class="banner-header d-flex justify-content-center ">
+
+                                <div class="  apply2">
+                                    <button type="button" class="btn btn-outline apply "
+                                        style="margin-bottom: 200px;  ">
+                                        View Details
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="position-relative">
+                            <div class="position-absolute top-100 start-50 translate-middle round p-2 title"
+                                style="background-color: white;">
+                                Children</div>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Education Supplies for Every Pair of Shoes Sold</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore...
+                            </p>
+
+                            <!-- <div class="container"> -->
+                            <div class="col-12">
+                                <div class="row mt-3" style="background-color: white">
+                                    <div class="col-12 d-flex justify-content-start align-items-start">
+                                        <img src="images/volunteer1.png" style="border-radius: 50%; height: 4.5em;"
+                                            alt="">
+                                        <span class="d-flex justify-content-center  mt-4 ms-3"> Margaret Walsh</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+
             </div>
         </div>
-    </div>
+   
     <script>
 
 
